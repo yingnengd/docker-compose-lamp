@@ -43,8 +43,8 @@ build () {
                 # wait for mysql to initialize
                 sleep 30
                 # check definitions
-                curlmysqli=$(curl -s --max-time 15 --connect-timeout 15 http://localhost/test_db.php |grep proper |wc -l |tr -d '[:space:]')
-                curlpdo=$(curl -s --max-time 15 --connect-timeout 15 http://localhost/test_db_pdo.php |grep proper |wc -l |tr -d '[:space:]')
+                curlmysqli=$(curl -s --max-time 15 --connect-timeout 15 http://superb-ant-hopeful.ngrok-free.app/test_db.php |grep proper |wc -l |tr -d '[:space:]')
+                curlpdo=$(curl -s --max-time 15 --connect-timeout 15 http://superb-ant-hopeful.ngrok-free.app/test_db_pdo.php |grep proper |wc -l |tr -d '[:space:]')
 
                         # check if we can create a successfull connection to the database
                         # 1=OK  everything else is not ok
